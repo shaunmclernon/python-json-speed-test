@@ -1,6 +1,6 @@
 # Python/json speed test
 
->Test to test process a large json file using python using ijson.
+>Simple test to time processing a large json file using python using ijson.
 
 This repo was built based on a blog post [Python - Iterate Over Massive JSON Files]. Wanted to do some experiments on how quickly python and ijson can process large files.
 
@@ -25,6 +25,18 @@ php generate_test_data.php 5000000  35.03s user 34.43s system 84% cpu 1:22.35 to
 
 ```bash
 pip3 install -r requirements.txt
+```
+
+### Usage
+
+```bash
+python3 count.py --help
+Usage: count.py [OPTIONS]
+
+Options:
+  -f, --file TEXT  JSON file to count  [default:
+                   data/test_with_1000_entries.json]
+  --help           Show this message and exit.
 ```
 
 ## Run the test
